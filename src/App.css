@@ -1,0 +1,130 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#fecha {
+  border-color: silver;
+  border-style: solid;
+  border-radius: 5%;
+  border-width: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  margin-top: 1rem;
+  padding: 6px 12px;
+
+}
+
+#fecha:hover {
+  border-color: cornflowerblue;
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+  .navbar,
+  .navbar-collapse {
+    flex-direction: column;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar {
+
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .navbar-brand {
+    margin-left: 0.5em;
+    padding-bottom: 0;
+    border-bottom: 2px solid cornsilk;
+  }
+
+  form input {
+    margin-bottom: 0.7em;
+  }
+
+}
+
+#columna {
+  height: 100vh;
+}
+
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#fondo::before {
+  content: "";
+  background-image: url(./images/finanzas.webp);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+table, .grafico{
+  background-color: white;
+  border-radius: 5px;
+}
+
